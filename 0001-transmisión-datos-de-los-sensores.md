@@ -4,3 +4,4 @@ Se quiere estudiar la transmisión de datos de varios sensores IoT
 estilo arquitectónico por eventos
 # Resultado de la decisión
 Se ha tomado esta decisión porque el software se compone de 3 familias de sensores IoT, y una de las familias está compuesta por 3 sensores: uno que produce un evento transmitiendo datos sobre el estado de dispositivos físicos de la factoría; otro que recepciona los datos y los envía a un tercer sensor; y éste último, recepciona los datos del segundo sensor y los envía a un centro de notificaciones (Cockpit) para su análisis y almacenamiento en una base de datos SQL.
+# Pros
