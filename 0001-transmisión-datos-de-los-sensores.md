@@ -31,7 +31,16 @@ Se ha elegido el estilo arquitectónico por eventos porque el software se compon
 
 ### Estilo arquitectónico modelo vista controlador (MVC)
 
-* Good, because Junit5 is "common Java knowledge"
-* Bad, because complex assertions tend to get hard to read
-* Bad, because no fluent API
+#### Ventajas
+
+* La separación del Modelo y la Vista, lo cual logra separar los datos, de su representación visual.
+* Facilita el manejo de errores.
+* Permite que el sistema sea escalable si es requerido.
+* Es posible agregar múltiples representaciones de los datos.
+
+#### Desventajas
+
+* La cantidad de archivos que se deben mantener incrementa considerablemente.
+* La curva de aprendizaje es más alta que utilizando otros modelos.
+* Su separación en capas, aumenta la complejidad del sistema.
 
