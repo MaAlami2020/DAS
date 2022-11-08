@@ -1,2 +1,2 @@
-# Aprendiendo_Markdown
-factoria4.0
+# Grupo 10
+Practica 1
