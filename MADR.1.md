@@ -1,3 +1,5 @@
+# Estado
+Pendiente
 # Nombre
 Estilo Rest
 //componente-de-visualización
