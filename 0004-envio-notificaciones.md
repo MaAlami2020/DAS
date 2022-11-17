@@ -1,19 +1,61 @@
 # Contexto y planteamiento del problema
 
-Envío de notificaciones por mensajería interna a los operarios
+Envio de notificaciones a los operarios
 
 # Opciones consideradas
 
-Patrón Publisher - Subscriber
+Arquitectura MQTT Publish / Subscribe
+
+# Alternativas
+
+Arquitectura Apache Kafka Publish / Subscribe
+Amazon Kinesis
 
 # Resultado de la decisión
 
-El motivo de esta decisión es que permite que la aplicacion anuncie eventos de forma asíncrona, solo a los receptores interesados.
+Se ha tomado esta decisión porque la arquitectura MQTT Publish/subscribe permite una fácil integración con el resto de elementos de la aplicación, además de posible ampliación en el futuro y soporte para redes poco fiables con su uso de sesiones persistentes.
 
 # Requisitos
 
-RF.4 : Envio de notificaciones
+RF.4 : Envío de notificaciones por mensajería interna a los operarios
 
-# Pros y contras
+# Pros y Contras
 
-(Pro) Puedes introducir nuevos tipos de subscriptores sin tener que cambiar el notificador
+(Pro) Permite el almacenamiento y gestion de gran cantidad de datos
+(Pro) Buena escalabilidad
+(Pro) Soporte con redes poco fiables
+
+(Contr) Usa protocolo de red propio
+
+### Estilo arquitectónico Apache Kafka
+
+#### Ventajas
+
+    Permite el almacenamiento y gestion de gran cantidad de datos
+    Buena escalabilidad
+
+#### Desventajas
+
+    Usa protocolo de red propio
+
+### Estilo arquitectónico MQTT Publish / Subscribe
+
+#### Ventajas
+
+    Ligero
+    Disponibilidad de muchas librerias para distintas implementaciones
+
+#### Desventajas
+
+    Se especializa en la parte del transporte y no tanto en la aplicacion (como se gestiona la informacion, como se autorizan los usuarios)
+
+### Estilo arquitectónico Amazon Kinesis
+
+#### Ventajas
+
+    Facil de usar e implementar
+
+#### Desventajas
+
+    Muchas mas limitaciones que los demas
+    Poca escalabilidad
