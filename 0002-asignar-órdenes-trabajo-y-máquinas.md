@@ -1,12 +1,23 @@
 # Contexto y planteamiento del problema
+
 Contar con un módulo de órdenes de trabajo para asignar órdenes de trabajo y máquinas a componentes
+
 # Opciones consideradas
+
 patrón publish
+
 # Alternativas
+
 patrón observer (no muy óptimo porque no interesa notificar a otros operarios el cambio de estado de un operario determinado del cual dependen otros)
+
 # Resultado de la decisión
+
 Se quiere asociar o desvincular, por cada orden de trabajo (Subject), uno o varios operarios (Object) para que la realice. Además, con este patrón se puede enviar notificaciones (por ejemplo, dar información más detallada sobre la orden a realizar a los operarios afectados (es decir, los suscritos a esa orden)). Lo mismo ocurriría en el caso de los componentes (Subject) y las máquinas (Object)
+
 # Requisitos
+
 RF.2 : Asignación de órdenes
+
 # Pros y Contras
+
 (Pro) facilidad de modificación a la hora de asignar o no tareas a un operario, ya que por cada orden de trabajo se tiene una lista de operarios que se encargan de realizarla
