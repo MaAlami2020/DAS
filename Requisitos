@@ -1,6 +1,6 @@
 REQUISITOS 
 
-(ADD-0002.1)RF.1 (MVC-REST-patron facade) 
+Hecho RF.1 (MVC-REST-patron facade) 
 
 Nombre: Visualización de estadísticas  
 
@@ -8,7 +8,7 @@ Descripción: Un componente de visualización que muestre las analísticas en ti
 
  
 
-(ADD-0002.3) RF.2 (Publish-Subscriber) 
+Hecho RF.2 (Publish-Subscriber) 
 
 Nombre: Asignación de ordenes  
 
@@ -16,7 +16,7 @@ Descripción: Un módulo de órdenes de trabajo con asignaciones de órdenes por
 
  
 
-(ADD-0002.2) RF.3.1 (eventos-MVC) 
+Hecho RF.3.1 (eventos-MVC) 
 
 Nombre: recibir datos de los sensores 
 
@@ -24,7 +24,7 @@ Nombre: recibir datos de los sensores
 
              sobre el estado de los dispositivos físicos de la factoría 
 
-(ADD-0002.2) RF.3.2 (factory-abstract factory) 
+Hecho RF.3.2 (factory-abstract factory) 
 
 Nombre: clasificación de los sensores 
 
