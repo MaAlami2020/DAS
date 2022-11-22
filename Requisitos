@@ -1,0 +1,81 @@
+REQUISITOS 
+
+(ADD-0002.1)RF.1 (MVC-REST-patron facade) 
+
+Nombre: Visualización de estadísticas  
+
+Descripción: Un componente de visualización que muestre las analísticas en tiempo real del 	proceso productivo y las órdenes de trabajo. 
+
+ 
+
+(ADD-0002.3) RF.2 (Publish-Subscriber) 
+
+Nombre: Asignación de ordenes  
+
+Descripción: Un módulo de órdenes de trabajo con asignaciones de órdenes por operario y 	máquinas que van a fabricar cada componente. 
+
+ 
+
+(ADD-0002.2) RF.3.1 (eventos-MVC) 
+
+Nombre: recibir datos de los sensores 
+
+              Descripción: una factoría inteligente se compone de diferentes sensores que recogen datos   
+
+             sobre el estado de los dispositivos físicos de la factoría 
+
+(ADD-0002.2) RF.3.2 (factory-abstract factory) 
+
+Nombre: clasificación de los sensores 
+
+              Descripción: una factoría inteligente se compone de diferentes sensores que recogen datos   
+
+             sobre el estado de los dispositivos físicos de la factoría 
+
+(ADD-0003.1) RF.4.1 (Publisher - Subscriber) 
+
+Nombre: Envío de notificaciones 
+
+Descripción: Envío de notificaciones por mensajería interna a los operarios 
+
+(ADD-0003.2) RF.4.2 (Publisher - Subscriber) 
+
+Nombre: Selector tipo de mensajería 
+
+Descripción: Envío de notificaciones por mensajería interna a los operarios 
+
+ 
+
+(ADD-0003.2) RF.5(Strategy) 
+
+Nombre: 2 algoritmos predictivos 
+
+Descripción: Un algoritmo para optimizar el volumen de órdenes de trabajo y otro para 	predecir el fallo en una línea de trabajo y asignar recursos de otras líneas. 
+
+ 
+
+RF.6 (Publisher - Subscriber) 
+
+Nombre: Suscripción a eventos 
+
+Descripción: los operarios se van a poder suscribir a eventos 
+
+RF.7 ( ) 
+
+               Nombre: Acceso a usuarios 
+
+               Descripción: Permitir que los usuarios puedan acceder a la aplicación 
+
+RF.7.1 () 
+
+Nombre: Límite de intentos de acceso 
+
+Descripción: Limitar el número de intentos de acceso para no sobrecargar al sistema.  
+
+ 
+
+RF.8 () 
+
+              Nombre: almacenar información en una BD 
+
+              Descripción: almacenar inventario del material existente 
