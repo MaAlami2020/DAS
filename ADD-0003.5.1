@@ -1,3 +1,40 @@
+# Status
+
+| Fecha | Estado |
+| --- | --- |
+| 16-11-22 | Pendiente |
+
+# Nombre
+
+Enviar notificaciones.
+
+# Contexto y planteamiento del problema
+
+Envio de notificaciones a los operarios.
+
+# Decisión
+
+ADD-0003.5.1. Arquitectura Apache Kafka
+
+
+# Resultado de la decisión
+
+Se ha tomado esta decisión porque la arquitectura MQTT Publish/subscribe permite una fácil integración con el resto de elementos de la aplicación, además de posible ampliación en el futuro y soporte para redes poco fiables con su uso de sesiones persistentes.
+
+# Requisitos
+
+RF.4 : Envío de notificaciones por mensajería interna a los operarios.
+
+# Pros y Contras
+
+(Pro) Permite el almacenamiento y gestion de gran cantidad de datos.
+
+(Pro) Buena escalabilidad.
+
+(Pro) Soporte con redes poco fiables.
+
+(Contr) Usa protocolo de red propio.
+
 ### Estilo arquitectónico Apache Kafka
 
 #### Ventajas
