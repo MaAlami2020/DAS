@@ -1,2 +1,11 @@
 # Grupo 10
 Practica 1
+
+Arquitectos Senior:
+- JAVIER GARCÍA SELLER
+- CRISTÓBAL JUSTO RUSTARAZO
+Arquitectos Junior:
+- MARÍA AMPARO ALAMI MOCHI
+Arquitectos Cognitivos:
+- MARCOS ALEJANDRO PASCUAL ROJAS
+- CASSIEL SETH MAYORCA HEIRISMAN
